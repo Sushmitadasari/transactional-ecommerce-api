@@ -1,8 +1,21 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
     "target": "ES2022",
-    "moduleResolution": "node",
-    "esModuleInterop": true
-  }
+    "module": "node16",
+"moduleResolution": "NodeNext",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": [
+    "src/**/*",
+    "worker/**/*",
+    "prisma/**/*",
+    "tests/**/*"
+  ]
 }
